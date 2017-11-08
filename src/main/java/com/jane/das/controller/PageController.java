@@ -16,9 +16,10 @@ public class PageController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/")
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String toLogin(){
-        return "test";
+
+        return "login";
     }
 
 
