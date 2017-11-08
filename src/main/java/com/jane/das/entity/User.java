@@ -16,6 +16,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;                //唯一性标识
 
+    private String loginName;       // 帐号
 
     private String username;        // 姓名
 

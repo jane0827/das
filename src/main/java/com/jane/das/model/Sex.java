@@ -1,10 +1,8 @@
 package com.jane.das.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
 public enum Sex {
 
     Male(1,"男"),
@@ -12,6 +10,11 @@ public enum Sex {
 
     private int value;
     private String text;
+
+    private Sex(int value, String text){
+        this.value = value;
+        this.text = text;
+    }
 
     private static Sex fromText(String text){
         for(Sex sex : Sex.values()){

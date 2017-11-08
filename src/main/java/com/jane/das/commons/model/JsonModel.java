@@ -1,4 +1,4 @@
-package com.jane.das.model;
+package com.jane.das.commons.model;
 
 
 public class JsonModel {

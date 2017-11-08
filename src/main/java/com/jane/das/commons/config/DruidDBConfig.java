@@ -1,4 +1,4 @@
-package com.jane.das.conf;
+package com.jane.das.commons.config;
 
 import java.sql.SQLException;
 
@@ -13,13 +13,6 @@ import org.springframework.context.annotation.Primary;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
-
-/**
- * DruidDBConfig类被@Configuration注解，用作配置信息
- *
- * @author jane
- *
- */
 @Configuration
 public class DruidDBConfig {
 
