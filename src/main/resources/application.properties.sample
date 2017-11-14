@@ -44,5 +44,5 @@ server.session.timeout=30
 server.tomcat.uri-encoding=UTF-8
 
 spring.thymeleaf.prefix=classpath:/templates/pages/
-spring.resources.static-locations=classpath:/static/
+spring.resources.static-locations=classpath:/templates/static/
 
