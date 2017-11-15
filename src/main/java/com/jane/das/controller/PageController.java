@@ -27,9 +27,11 @@ public class PageController {
     public String login(@RequestParam(value = "loginName") String loginName,
                            @RequestParam(value = "password") String password){
         if (userService.checkLoginUser(loginName,password)){
-            return "/test";
+            System.out.println("系统用户");
+            return "test";
         }else {
-            return "test2";
+            System.out.println("非系统用户");
+            return "login";
         }
     }
 }
