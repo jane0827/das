@@ -28,7 +28,7 @@ public class PageController {
                            @RequestParam(value = "password") String password){
         if (userService.checkLoginUser(loginName,password)){
             System.out.println("系统用户");
-            return "test";
+            return "home";
         }else {
             System.out.println("非系统用户");
             return "login";

@@ -4,14 +4,15 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/login.css"/>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
     <title th:text="#{app.title}">Magneto-test</title>
 </head>
 <body>
 <div class="page_bg">
-    <nav class="navbar navbar-inverse" th:fragment="header">
+   <!-- <nav class="navbar navbar-inverse" th:fragment="header">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            &lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -23,26 +24,20 @@
                 <a class="navbar-brand" href="/" th:text="#{app.title}"></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            &lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
                     <li><a href="/user/info">User</a></li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;
+        </div>&lt;!&ndash; /.container-fluid &ndash;&gt;
     </nav>
     <div id="app" class="container">
         <span th:text="#{app.title}"></span>
         {{message}}
-    </div>
-    <form action="/login" method="post">
-        用户名:
-        <input type="text" name="loginName" />
-        密码:
-        <input type="password" name="password" />
-        <input type="submit" value="登录" />
-    </form>
+    </div>-->
+
 
    <!-- <div id="formApp">
         <form  @submit.prevent="submit">
@@ -53,15 +48,39 @@
             <input type="submit" value="登录" />
         </form>
     </div>-->
+    <div class="login-div">
+        <form action="/login" method="post">
+            <div>
+                <label>
+                    <i>
+
+                    </i>
+                </label>
+                <input type="text" name="loginName" class="login-name" placeholder="用户名"/></div>
+
+            <label>密码:</label>
+            <input type="password" name="password" class="pass-word" placeholder=""/>
+            <button type="submit" class="submit-btn">登录</button>
+            <!--<input type="submit" value="" />-->
+            <div>
+                <a class="login-btn">快速注册</a>
+            </div>
+        </form>
+    </div>
+    <div class="copy-div">
+        <p class="copy-p">
+                    Copyright © 2017 Jane-das
+        </p>
+    </div>
 </div>
 </body>
 <script>
-    new Vue({
+    /*new Vue({
         el: '#app',
         data: {
             message: '成功ha!'
         }
-    })
+    })*/
 
     /*new Vue({
         el: '#formApp',
