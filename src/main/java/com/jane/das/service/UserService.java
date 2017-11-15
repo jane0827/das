@@ -44,7 +44,6 @@ public class UserService {
      * @return 用户信息
      */
     public User getSingleById(Long id){
-       return userDao.getOne(id);
+         return userDao.findOne(id);
     }
-
 }
