@@ -31,6 +31,7 @@ spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowS
 spring.datasource.useGlobalDataSourceStat=true
 
 #JPA Configuration:
+#spring.jpa.open-in-view=true //调用JPA仓库的方法时，添加避免懒加载
 spring.jpa.database=MYSQL
 # Show or not log for each sql query
 spring.jpa.show-sql=true
